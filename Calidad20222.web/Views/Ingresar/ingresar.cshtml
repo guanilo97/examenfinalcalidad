@@ -1,0 +1,57 @@
+﻿
+
+
+
+
+
+<form action="/Ingresar/ingresar" method="post">
+    <select name="carta" class="form-control">
+            <option value="0">--Seleccione--</option>
+            @foreach (var item in ViewBag.Carta)
+            {
+            
+                <option value="1"> @item.Numero@item.Palo</option>
+            
+            }
+    </select>
+<select name="carta1" class="form-control">
+    <option value="0">--Seleccione--</option>
+    @foreach (var item in ViewBag.Carta)
+    {
+
+            <option value="2"> @item.Numero@item.Palo</option>
+
+    }
+</select>
+    <select name="carta2" class="form-control">
+    <option value="0">--Seleccione--</option>
+    @foreach (var item in ViewBag.Carta)
+    {
+
+                            
+            <option value="3"> @item.Numero@item.Palo</option>
+
+    }
+</select>
+ <select name="carte3" class="form-control">
+            <option value="0">--Seleccione--</option>
+            @foreach (var item in ViewBag.Carta)
+            {
+
+            <option value="4"> @item.Numero@item.Palo</option>
+            
+            }
+    </select>
+<select name="carta4" class="form-control">
+    <option value="0">--Seleccione--</option>
+    @foreach (var item in ViewBag.Carta)
+    {
+
+            <option value="5"> @item.Numero@item.Palo</option>
+
+    }
+</select>
+    <button id="gene" class="btn btn-primary">Generar Jugada</button>
+ 
+</form>
+<h1>Jugada: @ViewBag.Jugada</h1>
